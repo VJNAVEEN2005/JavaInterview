@@ -1,3 +1,3 @@
-## 100 Days Of Challange 
+# 100 Days Of Challange 
 
-# Day 1 : Two Sum
+## Day 1 : Two Sum
