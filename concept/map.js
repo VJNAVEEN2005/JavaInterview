@@ -5,7 +5,7 @@ map.set(2,"2")
 // const i = map.get(1) + 1
 // map.set(1,map.get(1) + 1)
 
-
+// first Key and Value
 console.log(Boolean(map.has(1)))
 
 
