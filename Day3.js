@@ -29,7 +29,7 @@ class ListNode {
         current.next = newNode;
     }
 
-    printList(data) {
+    printList() {
         let current = this.head
         while (current) {
             console.log(current.val)
