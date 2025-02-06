@@ -1,7 +1,6 @@
 # 100 Days Of Challange
 
 ## Day 1 : Two Sum
-
 ```js
 var twoSum = function (nums, target) {
     const map = new Map()
@@ -18,7 +17,6 @@ var twoSum = function (nums, target) {
 ```
 
 ## Day 2 : Valid Parentheses
-
 ```js
 var isValid = function (s) {
 
@@ -45,13 +43,36 @@ var isValid = function (s) {
 ```
 
 ## Day 3 : Merge Two Sorted List
-
 ```js
-console.log("Hello World");
+cvar mergeTwoLists = function(list1, list2) {
+    
+    let list = new ListNode()
+    const ans = list
+    let current1 = list1
+    let current2 = list2
+
+    while (current1 && current2) {
+        if (current1.val <= current2.val) {
+            list.next = current1
+            current1 = current1.next
+        } else {
+            list.next = current2
+            current2 = current2.next
+        }
+        list = list.next
+    }
+    if (current2) {
+        list.next = current2
+    }
+    if (current1) {
+        list.next = current1
+    }
+
+    return ans.next
+};
 ```
 
 ## Day 4 : Best Time to Buy and Sell Stock
-
 ```js
 var maxProfit = function(prices) {
   let left = 0
@@ -71,7 +92,6 @@ var maxProfit = function(prices) {
 ```
 
 ## Day 5 : Valid Palindrome
-
 ```js
 var isPalindrome = function(s) {
     const Clearstr = String(s.replace(/[^a-zA-Z0-9]/g,'').toLowerCase())
@@ -81,7 +101,6 @@ var isPalindrome = function(s) {
 ```
 
 ## Day 6 : Inverting Binary Tree
-
 ```js
 var invertTree = function (root) {
   if (root) {
